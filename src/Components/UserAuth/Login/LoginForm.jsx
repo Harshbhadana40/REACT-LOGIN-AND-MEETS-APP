@@ -25,6 +25,7 @@ const LoginForm = (props) => {
     <div className={classes.Container}>
       <div className={classes.center}>
         <h1>Login</h1>
+        <h3>{userctx.error}</h3>
         <form onSubmit={submitHandler}>
           <div className={classes.txt_field}>
             <input type="text" required ref={emailRef} />
